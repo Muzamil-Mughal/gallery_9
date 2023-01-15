@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+* {
+  padding: 0;
+}
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 5rem;
+}
+.grid img {
+  width: 250px;
+  height: 250px;
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+}
+.grid-item{
+        padding: 10px;
+}
+.head {
+text-align: center;
+  font-size: 3rem;
+  line-height: 1;
+  width: 682px;
+  margin: 60px auto 0;
+  font-family: Montserrat, sans-serif !important;
+}
+hr{
+   height:2px;
+  border-width:0;
+  color:rgb(10, 9, 9);
+  background-color:rgb(0, 0, 0);
+}
+.line{
+    text-align: center;
+    font-size: 1.875rem;
+    line-height: 1.6;
+    width: 795px;
+    margin: 50px auto 0;
+    font-weight: lighter;
+}
+@media only screen and (max-width: 450px) {
+  /* For mobile phones: */
+  /* [class*="col-"] {
+    width: 100%;
+  } */
+  .grid{
+    grid-template-columns: 1fr;
+  }
+  .grid img{
+    width: 607px;
+    height: 600px;
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+  }
+  body{
+    background-color: khaki;
+    padding: 5%;
+  }
+  div.head{
+    font-size: 100px;
+    padding: 5%;
+    color: chocolate;
+    margin-top: -92px;
+  }
+  div.line{
+    font-size: 30px;
+    color: rgb(126, 105, 145);
+  }
+  hr{
+    height: 7px;
+    border-width: 0;
+    color: rgb(158, 22, 22);
+    background-color: crimson;
+  }
+}
